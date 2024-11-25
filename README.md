@@ -5,7 +5,7 @@ Overlay that grabs audio and displays a character on the desktop with transparen
 [Patreon](https://patreon.com/junesiphone)
 
 # Info
-This is a godot project you need Godot to run. I will upload an exe eventually. Just got this poc working.
+This is a Godot project you need Godot to run. I will upload an exe eventually. Just got this poc working.
 My knowledge of Godot is 4 days old, but I think i'm getting the hang of it.
 
 # Overview
@@ -24,24 +24,33 @@ those to display a mouth image of that sound.
 
 # Setup
 [VoiceMeter Virtual Audio Device](https://vb-audio.com/Cable/) - brings desktop audio to an output
+
 [VoiceMeter Banana](https://vb-audio.com/Voicemeeter/banana.htm) - used to map sound inputs and outputs
+
 [Godot 4.3](https://godotengine.org/) - runs this project
 
 ## Setup VoiceMeter Virtual Audio Device
 Install
+
 Set your windows sound output to CABLE In 16ch
+
 Set your windows sound input (mic) to CABLE Output
 
 ## Setup VoiceMeter Banana
 Install
+
 Set Stereo Input 1 to CABLE Output
+
 Set A1 to whatever speakers you want your sounds to play through. Bascially whatever your Windows output
 device was.
 
 # Setup Godot Project
 git clone this project or download it
+
 open the project.godot
+
 press play
+
 play some audio
 
 # Extendability
