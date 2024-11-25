@@ -1,0 +1,10 @@
+[gd_resource type="AudioBusLayout" load_steps=2 format=3 uid="uid://d35climaaovx"]
+
+[sub_resource type="AudioEffectSpectrumAnalyzer" id="AudioEffectSpectrumAnalyzer_s7bcf"]
+resource_name = "SpectrumAnalyzer"
+
+[resource]
+bus/0/mute = true
+bus/0/volume_db = 0.464998
+bus/0/effect/0/effect = SubResource("AudioEffectSpectrumAnalyzer_s7bcf")
+bus/0/effect/0/enabled = true
