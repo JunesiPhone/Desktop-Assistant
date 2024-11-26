@@ -1,6 +1,7 @@
 extends Node2D
 
 @onready var _MainWindow: Window = get_window()
+@onready var input_dialog = $AcceptDialog
 
 # Exported variables for configuration in the editor on Main
 @export var model_sprite: Sprite2D
@@ -30,3 +31,7 @@ func update_window_position():
 func _process(_delta):
 	# Update the window position dynamically
 	update_window_position()
+	
+func _input(event):
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+		input_dialog.show_dialog();

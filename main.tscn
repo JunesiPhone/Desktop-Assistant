@@ -1,7 +1,8 @@
-[gd_scene load_steps=19 format=3 uid="uid://x8sjiq8bborf"]
+[gd_scene load_steps=20 format=3 uid="uid://x8sjiq8bborf"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_1laju"]
 [ext_resource type="Texture2D" uid="uid://s3sb7muv0jh7" path="res://assets/girl.png" id="2_65t2u"]
+[ext_resource type="Script" path="res://dialog.gd" id="2_su3jv"]
 [ext_resource type="Texture2D" uid="uid://djxh26tqfbh4m" path="res://assets/s.png" id="3_4he4t"]
 [ext_resource type="Script" path="res://scripts/audio.gd" id="3_gqqn0"]
 [ext_resource type="Texture2D" uid="uid://bjepj6js6nyw4" path="res://assets/o.png" id="4_v7wmn"]
@@ -144,6 +145,15 @@ _data = {
 script = ExtResource("1_1laju")
 model_sprite = NodePath("Model")
 mouth_anim_player = NodePath("mouth_anim_player")
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+script = ExtResource("2_su3jv")
+
+[node name="LineEdit" type="LineEdit" parent="AcceptDialog"]
+offset_right = 67.0625
+offset_bottom = 31.0
+
+[node name="HTTPRequest" type="HTTPRequest" parent="AcceptDialog"]
 
 [node name="Model" type="Sprite2D" parent="."]
 position = Vector2(93, 337)
